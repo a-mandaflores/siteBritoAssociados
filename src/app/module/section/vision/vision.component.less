@@ -1,0 +1,58 @@
+.section{
+    display: flex;
+    justify-content: center;
+    background-color: #EBE9F5; 
+}
+
+.vision{
+    padding: 2rem !important;
+    gap: 4rem !important;
+    display: flex;
+    align-items: center;
+    width: 80%;  
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+
+}
+
+
+p-fieldset {
+    background-color: transparent !important;
+    width: 80%;
+    height: 100%;
+}
+
+::ng-deep .p-fieldset {
+    padding: 1rem !important;
+    background-color: transparent !important;
+    border: 2px solid rgba(0, 0, 0, 0.2)!important;
+    height: 100%;
+}
+
+::ng-deep .p-fieldset-legend {
+    background-color: transparent !important;
+}
+
+h1{
+    font-size: larger;
+    font-weight: 200;
+}
+
+p{
+    padding-top: 1rem !important;
+    font-size: small;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+    .vision {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .vision {
+        width: 90%;
+        padding: 1rem !important;
+    }
+}

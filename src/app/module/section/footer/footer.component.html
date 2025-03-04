@@ -1,0 +1,24 @@
+<section class="section">
+    <div class="container">
+        @if (isDesktop) {
+        <div>
+            <img src="assets/Logo/logoWhite.png" alt="">
+        </div>
+    }
+        <div class="infos">
+            <h3>CNPJ: 26.208.299/0001-68</h3>
+            <h3>Brito & Associados Contabilidade e Treinamentos</h3>
+            <h3>Endereço: Rua do Sossego, 298 Caixa Postal 426,<br /> Santo Amaro, Recife, Brazil 50100150</h3>
+        </div>
+
+        <div class="sectionIcon">
+            @for (item of data; track item.img) {
+            <a href="{{item.a}}" target="_blank">
+                <div class="icons">
+                    <img [src]="item.img" alt="">
+                </div>
+            </a>
+            }
+        </div>
+    </div>
+</section>

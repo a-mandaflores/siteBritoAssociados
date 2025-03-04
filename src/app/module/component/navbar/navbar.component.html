@@ -1,0 +1,58 @@
+<section>
+    <div class="navbar">
+        <div class="container">
+            <div class="icons" onclick="location.href='#quemSomos'">
+                <img src="assets/Icone/quemSomos.png" alt="">
+                <h3>Quem Somos</h3>
+                <p>Um pouco da nossa história</p>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="icons">
+                <img src="assets/Icone/visao.png" alt="">
+                <h3>Visão e valores</h3>
+                <p>Nosso propósito</p>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="icons">
+                <img src="assets/Icone/servicos.png" alt="">
+                <h3>Nossos serviços</h3>
+                <p>O que entregamos para você</p>
+            </div>
+        </div>
+    </div>
+
+    @if (openClose) {
+    <div class="navbar-phone">
+        <span (click)="close()" class="material-symbols-outlined">
+            close
+        </span>
+        <div class="container-phone">
+            <div class="icons" onclick="location.href='#quemSomos'">
+                <img src="assets/Icone/quemSomos.png" alt="">
+                <h3>Quem Somos</h3>
+                <p>Um pouco da nossa história</p>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="icons" onclick="location.href='#visaoValores'">
+                <img src="assets/Icone/visao.png" alt="">
+                <h3>Visão e valores</h3>
+                <p>Nosso propósito</p>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="icons">
+                <img src="assets/Icone/servicos.png" alt="" onclick="location.href='#servicos'">
+                <h3>Nossos serviços</h3>
+                <p>O que entregamos para você</p>
+            </div>
+        </div>
+    </div>
+}
+</section>

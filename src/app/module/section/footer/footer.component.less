@@ -1,0 +1,46 @@
+.section{
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem !important;
+    color: white;
+    width: 80%;
+}
+
+.infos{
+    h3{
+        font-size: medium;
+        font-weight: 300;
+    }
+}
+
+.icons{
+    margin: .6rem !important;
+    padding: .6rem !important;
+    border: 1px solid #9C9C9C;
+
+    img{
+        width: 30px;
+    }
+}
+
+.sectionIcon{
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+ .container{
+    align-items: start;
+    flex-direction: column;
+ }   
+ .icons{
+    margin-top: 2rem !important;
+ }
+}

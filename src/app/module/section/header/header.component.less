@@ -1,0 +1,104 @@
+.header {
+    background: url("/assets/Fundo/imagemRecife.webp") no-repeat center;
+    background-size: cover;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.color-bg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(19, 10, 91, 0.5);
+}
+img{
+    cursor: pointer;
+    margin-top: 4rem !important;
+}
+
+h1{
+    color: white;
+    font-size: xx-large;
+    padding: 2rem 0 0.5rem 0 !important;
+}
+p{
+    color: white;
+    font-size: larger;
+    font-weight: 100;
+}
+.custom-button{
+    background-color: white !important;
+    border: none !important;;
+    cursor: pointer;
+    color: #454545;
+    margin-top: 2rem !important;
+    padding: .8rem 2rem !important;
+    border-radius: 50px;
+    font-size: small;
+    font-weight: 800;
+    transition: all 0.2s ease-in-out;
+}
+
+.hamburger{
+    padding: 1rem !important;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+button:hover{
+    border: none;
+    color: white !important;;
+    background-color: #130a5b !important;
+}
+
+
+@media screen and (max-width: 750px) {
+    .color-bg {
+        height: 55vh;
+    }
+    .header {
+        background-position: top;
+        background-size: 1100px;
+        height: 55vh;
+    }
+    img{
+        width: 150px;
+    }
+    h1 {
+        font-size: larger;        
+    }
+    p{
+        font-size: small;        
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .color-bg {
+        height: 50vh;
+    }
+    .header {
+        background-position: top;
+        background-size: 850px;
+        height: 50vh;
+    }
+    img{
+        width: 100px;
+    }
+    .color-bg{
+        padding: 1rem !important;
+    }
+
+    .custom-button{
+        font-size: x-small;
+        padding: .5rem 1rem !important;
+
+    }
+}
+

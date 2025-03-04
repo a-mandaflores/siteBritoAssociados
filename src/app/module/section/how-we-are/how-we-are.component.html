@@ -1,0 +1,16 @@
+<section class="section" id="quemSomos">
+    <div class="informations">
+        
+        <h1>{{ data.title }}</h1>
+        <div class="underline"></div>
+        <div class="informations-history">
+            <img [src]="data.img" alt="">
+            <p [innerHTML]="data.body"></p>
+        </div>
+    </div>
+    <div class="bolActive">
+        <div class="bol" [class.active]="index === 0" (click)="setInfo(0)"></div>
+        <div class="bol" [class.active]="index === 1" (click)="setInfo(1)"></div>
+    </div>
+   
+</section>

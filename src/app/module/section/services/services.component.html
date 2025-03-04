@@ -1,0 +1,25 @@
+<section class="section" id="servicos">
+    <div class="container">
+        <div class="service">
+            <h1>Nossos Serviços</h1>
+            <p>Nossa empresa oferece uma estrutura plenamente capacitada e especializada para
+                oferecer soluções em:
+            </p>
+        </div>
+        <div class="carousel-container">
+            <button (click)="prev()" class="arrow left">‹</button>
+            <div class="carousel">
+                @for (item of visibleServices; track $index) {
+                <div class="service-item">
+                    <img [src]="item.img" [alt]="item.title">
+                    <div class="text">
+                        <h3>{{ item.title }}</h3>
+                        <p [innerHTML]="item.text"></p>
+                    </div>
+                </div>
+                }
+            </div>
+            <button (click)="next()" class="arrow right">›</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="header" style="min-height: 50vh;">
+    <div class="color-bg">
+        <img src="assets/Logo/logoWhite.png" alt="">
+        <h1>Simplificando suas finanças</h1>
+        <p>Para que você foque no que realmente importa</p>
+
+        <button (click)="scrollToContact()" onclick="location.href='#contact'" class="custom-button" pButton
+            label="Fele Conosco"></button>
+    </div>
+
+    @if (!openNavBar) {
+    <div class="hamburger" (click)="openNavBar = !openNavBar" [ngStyle]="{ display: isDesktop ? 'none' : 'block' }">
+
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+
+    </div>
+    }
+
+</section>
+
+<app-navbar [isDesktop]="isDesktop" [openClose]="openNavBar" (closeNavbar)="openNavBar = false"></app-navbar>

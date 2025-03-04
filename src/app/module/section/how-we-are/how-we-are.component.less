@@ -1,0 +1,140 @@
+.section {
+    padding: 3rem !important;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.informations {
+    margin-top: 5rem !important;
+    width: 80%;
+}
+
+.informations-history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+.underline {
+    width: 100%;
+    height: .5px;
+    background-color: rgb(177, 177, 177);
+    margin-bottom: 1rem !important;
+
+}
+
+.informations-history img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+p {
+    width: 100%;
+    padding: 1rem 0 0 2rem !important;
+    font-size: x-large;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.bolActive {
+    display: flex;
+    margin-top: 1rem !important;
+
+}
+
+.bol {
+    cursor: pointer;
+    margin: 1rem !important;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+}
+
+.bol.active {
+    background-color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .informations,
+    .section {
+        min-height: 300px;
+
+    }
+
+    P {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    P {
+        font-size: medium;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    img {
+        width: 80%;
+    }
+
+    .informations-history {
+        flex-direction: column-reverse
+    }
+
+    p {
+        padding: 1rem 0 2rem 0 !important;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section {
+        padding: 1rem !important;
+    }
+
+    .informations {
+        width: 80%;
+        margin-top: 1rem !important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .informations {
+        width: 100%;
+    }
+
+    .section {
+        padding: 0 !important;
+    }
+    .underline{
+        margin: 0 2rem !important;
+        width: 80%;
+    }
+    h1{
+        padding: 0 2rem !important;
+    }
+    p{
+        padding: 2rem !important;
+    }
+}
